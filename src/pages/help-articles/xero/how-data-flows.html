@@ -1,0 +1,105 @@
+<!--
+title: How Data Flows Between Xero and DonorChase | DonorChase
+description: Which Xero records DonorChase reads, what each one becomes in DonorChase, and when the sync runs. Data flows one way, from Xero to DonorChase.
+nav: help
+-->
+
+<article class="article">
+<a class="back-link" href="/help-articles/xero">&larr; DonorChase and Xero</a>
+<h1>How Data Flows Between Xero and DonorChase</h1>
+<p>Data flows one way only: from Xero into DonorChase. DonorChase reads your Xero records to work out what each donor owes, and never creates, changes or deletes anything in Xero. Xero stays your financial record; DonorChase is where your team does the chasing.</p>
+
+<div class="flow" role="img" aria-label="Diagram: contacts, sales invoices, payments, credit notes and overpayments flow one way from Xero into DonorChase, where they become donors, invoices on dashboards, amounts paid, credits and money on account. Chasers, notes, groups and team assignments stay in DonorChase. Nothing flows back to Xero.">
+<div class="flow-box">
+<h3>Xero</h3>
+<ul>
+<li>Contacts</li>
+<li>Sales invoices</li>
+<li>Payments</li>
+<li>Credit notes</li>
+<li>Overpayments</li>
+</ul>
+</div>
+<div class="flow-arrow">
+<span>Read-only sync</span>
+<span class="flow-when">Nightly, and on Sync Now</span>
+</div>
+<div class="flow-box">
+<h3>DonorChase</h3>
+<ul>
+<li>Donors</li>
+<li>Invoices on dashboards</li>
+<li>Paid amounts</li>
+<li>Credits</li>
+<li>Money on account</li>
+</ul>
+<p class="flow-own">Kept only in DonorChase: chasers, comments, groups, team assignments, donor contact details you upload.</p>
+</div>
+</div>
+<p class="center"><strong>Nothing is sent back to Xero.</strong></p>
+
+<h2>What DonorChase reads, and what it becomes</h2>
+<div class="table-wrap">
+<table class="data-table">
+<thead>
+<tr><th>In Xero</th><th>What DonorChase reads</th><th>In DonorChase</th></tr>
+</thead>
+<tbody>
+<tr>
+<td>Contacts, including archived contacts</td>
+<td>Name</td>
+<td>A donor for each contact. Your Xero contacts' email addresses, phone numbers and addresses are not copied.</td>
+</tr>
+<tr>
+<td>Sales invoices (accounts receivable) with the status <em>Awaiting Payment</em> or <em>Paid</em></td>
+<td>Contact, number, reference, date, due date, total, amount paid, amount credited</td>
+<td>An invoice on the donor, shown on a dashboard in the period its date falls in. The balance still owed is what your team chases.</td>
+</tr>
+<tr>
+<td>Payments against those invoices</td>
+<td>Date and amount</td>
+<td>The <em>Paid</em> figures on dashboards and donor pages. When an invoice is fully paid, any open chaser for it is completed automatically.</td>
+</tr>
+<tr>
+<td>Credit notes applied to those invoices</td>
+<td>Number, date and amount applied</td>
+<td>The <em>Credit</em> figures, reducing what is owed.</td>
+</tr>
+<tr>
+<td>Overpayments received from contacts (not voided)</td>
+<td>Date, amount, and the invoices it has been allocated to</td>
+<td>Money on account for the donor, reducing what they owe overall.</td>
+</tr>
+</tbody>
+</table>
+</div>
+
+<h2>What DonorChase doesn't read</h2>
+<ul>
+<li>Draft, submitted, voided and deleted invoices.</li>
+<li>Bills, purchases, expenses and anything else on the supplier side.</li>
+<li>Bank accounts, bank transactions, journals and reports.</li>
+<li>Your chart of accounts, tax rates, items and tracking categories.</li>
+</ul>
+<p>Because DonorChase doesn't write to Xero, there are no account, tax rate or tracking category settings to map.</p>
+
+<h2>When the sync runs</h2>
+<ul>
+<li><strong>Every night</strong>, DonorChase syncs every connected organisation automatically.</li>
+<li><strong>Whenever you want</strong>, an administrator can click <strong>Sync Now</strong> on <strong>Settings &rarr; Xero Connection</strong>.</li>
+<li><strong>When you first sign up</strong>, DonorChase syncs straight away.</li>
+</ul>
+<p>Each sync brings DonorChase up to date with Xero:</p>
+<ul>
+<li>New contacts become new donors, and renamed contacts are renamed.</li>
+<li>When you merge contacts in Xero, their invoices and payments move to the contact you kept, along with any chasers and comments in DonorChase.</li>
+<li>New invoices are added. After your first sync, they wait in <strong>Settings &rarr; Allocate Invoices</strong> for you to choose a dashboard.</li>
+<li>Changes to invoices, payments and credit notes in Xero replace the figures in DonorChase.</li>
+<li>If an invoice is voided, deleted or set back to draft in Xero, it is removed from DonorChase, along with any chasers for it.</li>
+</ul>
+
+<h2>Amounts and currency</h2>
+<p>DonorChase shows invoice amounts as they appear in Xero, including tax. It is designed for UK organisations invoicing in pounds sterling. If you raise invoices in other currencies, DonorChase does not convert them, so they are added to totals at their face value.</p>
+
+<p class="next-link"><a class="btn btn-primary" href="/help-articles/xero/managing-the-connection">Next: Managing your Xero connection</a></p>
+</article>

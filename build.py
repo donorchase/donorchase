@@ -46,7 +46,7 @@ SITE_URL = "https://donorchase.com"
 FORMSPREE_ID = "YOUR_FORM_ID"
 
 # Where the app login lives.
-LOGIN_URL = "https://app.donorchase.co.uk/login"
+LOGIN_URL = "https://app.donorchase.com/login"
 
 # If an image is missing from src/static/images, the page links to the copy on
 # this site instead, so nothing looks broken while you move the images across.
@@ -199,6 +199,7 @@ def footer_html():
 </div>
 <div class="container copyright">
 <p>&copy; {year} DonorChase. All rights reserved.</p>
+<p>DonorChase is a trading name of Chasm (Grants) Limited, registered in England and Wales, company number 14190757. Registered office: 13 Elmcroft Avenue, London NW11 0RS.</p>
 </div>
 </footer>"""
 

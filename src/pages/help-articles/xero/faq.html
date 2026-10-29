@@ -1,0 +1,110 @@
+<!--
+title: Xero Integration FAQ | DonorChase
+description: Answers to common questions about DonorChase and Xero: what the integration does and doesn't do, syncing, reconciling, the free trial, billing and disconnecting.
+nav: help
+-->
+
+<article class="article">
+<a class="back-link" href="/help-articles/xero">&larr; DonorChase and Xero</a>
+<h1>Xero Integration FAQ</h1>
+
+<h2>The integration</h2>
+<div class="faq">
+<details>
+<summary>Does DonorChase change anything in Xero?</summary>
+<div class="faq-body">No. DonorChase only reads from Xero. It never creates, changes or deletes contacts, invoices, payments or anything else, so your Xero records stay exactly as you keep them.</div>
+</details>
+<details>
+<summary>What doesn't the integration do?</summary>
+<div class="faq-body">
+<ul>
+<li>It doesn't write anything back to Xero, so chasers and comments stay in DonorChase.</li>
+<li>It doesn't send invoices, statements or reminders to donors. Your team contacts donors, and DonorChase helps them prepare messages and keeps track.</li>
+<li>It doesn't collect payments from donors, so there are no payment processing fees to account for in Xero.</li>
+<li>It doesn't read bank transactions, bills, journals or reports, and doesn't reconcile your bank.</li>
+<li>It doesn't copy your contacts' email addresses, phone numbers or postal addresses from Xero.</li>
+<li>It doesn't convert currencies. DonorChase is designed for organisations invoicing in pounds sterling.</li>
+<li>It doesn't make Gift Aid claims. For that, see our sister product, <a href="{{DONORBOOST_URL}}" rel="noopener">DonorBoost</a>.</li>
+</ul>
+</div>
+</details>
+<details>
+<summary>How do I set up my organisation in Xero for DonorChase?</summary>
+<div class="faq-body">Raise each pledge, fee, membership or donation request as a sales invoice to the donor's contact, and record what they pay against that invoice, usually by reconciling your bank feed. DonorChase compares the two to show what is still owed. If you don't raise invoices today, <a href="/software/integrations">our integrations page</a> explains why it's worth doing and how it affects your reports.</div>
+</details>
+<details>
+<summary>When and how often does DonorChase sync?</summary>
+<div class="faq-body">Every night, automatically. An administrator can also click <strong>Sync Now</strong> on <strong>Settings &rarr; Xero Connection</strong> at any time. See <a href="/help-articles/xero/how-data-flows">How data flows</a> for exactly what each sync updates.</div>
+</details>
+<details>
+<summary>How do I reconcile, and how do payments reach DonorChase?</summary>
+<div class="faq-body">Carry on reconciling in Xero exactly as you do now. When you match a bank line to an invoice, Xero records a payment against it, and DonorChase picks the payment up on its next sync. Payments you don't match to an invoice, such as a bank line coded straight to income, can't be linked to a donor's pledge, so DonorChase still shows that invoice as owed. Money received on account, recorded as an overpayment in Xero, reduces what the donor owes.</div>
+</details>
+<details>
+<summary>I can't see an invoice in DonorChase. Why not?</summary>
+<div class="faq-body">
+<ul>
+<li>It's still a draft or awaiting approval in Xero. DonorChase reads invoices only once they're approved.</li>
+<li>It was raised since the last sync. Click <strong>Sync Now</strong> on <strong>Settings &rarr; Xero Connection</strong>.</li>
+<li>It's waiting to be put on a dashboard in <strong>Settings &rarr; Allocate Invoices</strong>, or it was marked <em>Don't Import</em> there.</li>
+<li>Its date is before the <strong>Hide Invoices Before</strong> date in <strong>Settings &rarr; Dashboard Setup</strong>.</li>
+<li>It was voided or deleted in Xero.</li>
+</ul>
+</div>
+</details>
+<details>
+<summary>Where do donors' email addresses and phone numbers come from?</summary>
+<div class="faq-body">DonorChase doesn't copy them from Xero. You can add contacts with <strong>Add Contact</strong> on each donor's page, or upload them all at once from a spreadsheet using <strong>Settings &rarr; Upload Contacts</strong>.</div>
+</details>
+<details>
+<summary>Can I use DonorChase with more than one Xero organisation?</summary>
+<div class="faq-body">Yes. Each Xero organisation is a separate DonorChase account with its own dashboards, team and subscription. Sign up again with the same email address and choose the other organisation; it's added to your existing login, and you can switch between organisations from the menu.</div>
+</details>
+<details>
+<summary>Who can see our Xero data in DonorChase?</summary>
+<div class="faq-body">Only the people your DonorChase administrators invite. Each user logs in with a password or with Xero, plus a code sent to their mobile. Only administrators can manage the Xero connection, users and billing.</div>
+</details>
+<details>
+<summary>How do I disconnect DonorChase from Xero?</summary>
+<div class="faq-body">From <strong>Settings &rarr; Xero Connection</strong> in DonorChase, or from <strong>Settings &rarr; Connected apps</strong> in Xero. Your data in DonorChase is kept, and you can reconnect at any time. See <a href="/help-articles/xero/managing-the-connection">Managing your Xero connection</a>.</div>
+</details>
+<details>
+<summary>We use QuickBooks, not Xero. Can we still use DonorChase?</summary>
+<div class="faq-body">Yes. <a href="/contact-us">Contact us</a> and we'll set you up.</div>
+</details>
+</div>
+
+<h2>Free trial and billing</h2>
+<div class="faq">
+<details>
+<summary>How does the free trial work?</summary>
+<div class="faq-body">Your first month is free, with full access and no card needed. We email your DonorChase administrators a week before it ends. To keep going, an administrator subscribes from <strong>Settings &rarr; Billing</strong>. If you subscribe during the trial, you still get the whole month free: your first payment is taken when the trial ends.</div>
+</details>
+<details>
+<summary>How much does it cost?</summary>
+<div class="faq-body">It depends on the value of invoices synced from Xero that are dated in the last 12 months: £500 a year or £50 a month up to £500,000; £1,000 a year or £100 a month up to £1 million; and £1,500 a year or £150 a month above that. Prices exclude VAT. See our <a href="/non-profit-accounting-software">pricing page</a>.</div>
+</details>
+<details>
+<summary>What happens if our invoices grow past a tier?</summary>
+<div class="faq-body">We check the value each night, and each payment is charged at the tier that applies when it's taken. You're never charged partway through a period, and your Billing page always shows your current tier.</div>
+</details>
+<details>
+<summary>How do we pay, and where are our invoices?</summary>
+<div class="faq-body">By card, annually or monthly, through our payment provider, Stripe. Administrators can click <strong>Manage Billing</strong> on <strong>Settings &rarr; Billing</strong> to update the card, change the billing details and VAT number on your invoices, and download past invoices.</div>
+</details>
+<details>
+<summary>What happens if a payment fails?</summary>
+<div class="faq-body">Stripe retries it over the following days, and DonorChase shows a reminder to update your payment details, which you can do from <strong>Manage Billing</strong>. If the payment still can't be taken, the subscription ends and access stops until an administrator subscribes again from <strong>Settings &rarr; Billing</strong>.</div>
+</details>
+<details id="cancel">
+<summary>How do we cancel?</summary>
+<div class="faq-body">An administrator clicks <strong>Manage Billing</strong> on <strong>Settings &rarr; Billing</strong> and cancels there, or emails <a href="mailto:info@donorchase.com">info@donorchase.com</a>. You keep full access until the end of the period you've paid for, and you can change your mind until then. Payments already made aren't refunded.</div>
+</details>
+<details>
+<summary>What happens to our data if we stop?</summary>
+<div class="faq-body">When your trial or subscription ends, access to DonorChase stops, but your data is kept for 30 days in case you change your mind; subscribe from <strong>Settings &rarr; Billing</strong> to pick up where you left off. After 30 days, DonorChase disconnects from Xero. You can ask us for an export of your data within that time, and we then delete it, as set out in our <a href="/terms-and-conditions">Terms and Conditions</a>.</div>
+</details>
+</div>
+
+<p>Have a question that isn't answered here? Email <a href="mailto:info@donorchase.com">info@donorchase.com</a> or call <a href="tel:07570013936">0 7570 013936</a>.</p>
+</article>
