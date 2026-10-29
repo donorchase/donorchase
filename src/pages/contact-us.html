@@ -1,0 +1,91 @@
+<!--
+title: Contact Us | DonorChase
+description: Get in touch with DonorChase to find out how our charity bookkeeping software can help your organisation.
+nav: contact
+-->
+
+<section class="page-hero">
+<div class="container">
+<h1>Contact Us</h1>
+<p>Thank you for your interest in DonorChase bookkeeping software</p>
+</div>
+</section>
+
+<section class="block">
+<div class="container">
+<div class="contact-details">
+<p>Email us at <a href="mailto:info@donorchase.com">info@donorchase.com</a> or call <a href="tel:07570013936">0 7570 013936</a></p>
+<p>Or fill out our form below, and we will be in touch to provide more details.</p>
+</div>
+
+<form class="form-card" id="contact-form" method="post" action="https://formspree.io/f/{{FORMSPREE_ID}}">
+<input type="hidden" name="_subject" value="New DonorChase website enquiry" />
+<input type="hidden" name="Segment" value="general" />
+<input type="hidden" name="SourcePage" value="" />
+
+<div class="hp-field" aria-hidden="true">
+<label>Leave this field empty <input type="text" name="_gotcha" tabindex="-1" autocomplete="off" /></label>
+</div>
+
+<div id="form-status" role="alert" hidden></div>
+
+<div class="form-row">
+<label for="Name">Your Name <span class="req">*</span></label>
+<input type="text" autocomplete="name" id="Name" maxlength="100" name="Name" required />
+</div>
+<div class="form-row">
+<label for="Email">Company Email <span class="req">*</span></label>
+<input type="email" autocomplete="email" id="Email" maxlength="200" name="email" required />
+</div>
+<div class="form-row">
+<label for="Phone">Contact Number <span class="req">*</span></label>
+<input type="tel" autocomplete="tel" id="Phone" maxlength="50" name="Phone" required />
+</div>
+<div class="form-row">
+<label for="Organisation">Organisation Name <span class="req">*</span></label>
+<input type="text" autocomplete="organization" id="Organisation" maxlength="200" name="Organisation" required />
+</div>
+<div class="form-row">
+<label for="OrganisationType">What type of organisation are you? <span class="req">*</span></label>
+<select id="OrganisationType" name="OrganisationType" required>
+<option value="">Please select...</option>
+<option>School</option>
+<option>Membership or subscription charity</option>
+<option>Charity running fundraising events or appeals</option>
+<option>Other charity</option>
+<option>Other</option>
+</select>
+</div>
+<div class="form-row" id="other-type-row">
+<label for="OrganisationTypeOther">If other, please specify here</label>
+<input type="text" id="OrganisationTypeOther" maxlength="200" name="OrganisationTypeOther" />
+</div>
+<div class="form-row">
+<label>What are you interested in?</label>
+<div class="form-checks">
+<label><input type="checkbox" name="InterestedIn" value="DonorChase" /> DonorChase</label>
+<label><input type="checkbox" name="InterestedIn" value="DonorBoost" /> DonorBoost (Gift Aid claims)</label>
+<label><input type="checkbox" name="InterestedIn" value="Gift Aid review" /> Gift Aid review</label>
+</div>
+</div>
+<div class="form-row">
+<label for="BookkeepingPackage">What bookkeeping package are you currently using?</label>
+<input type="text" id="BookkeepingPackage" maxlength="200" name="BookkeepingPackage" placeholder="e.g. Xero" />
+</div>
+<div class="form-row">
+<label for="Comments">Additional Comments</label>
+<textarea id="Comments" maxlength="4000" name="Comments"></textarea>
+</div>
+<div class="form-row form-check">
+<input type="checkbox" id="MailingList" name="MailingList" value="Yes" />
+<label for="MailingList">Join our mailing list. See our <a href="/privacy-policy">privacy policy</a>.</label>
+</div>
+<button type="submit" class="btn btn-primary">Submit</button>
+</form>
+
+<div class="form-success" id="form-success" hidden>
+<h2>Thank you</h2>
+<p>We've received your enquiry and will be in touch shortly.</p>
+</div>
+</div>
+</section>
