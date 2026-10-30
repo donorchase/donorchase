@@ -18,13 +18,13 @@ nav: contact
 <p>Or fill out our form below, and we will be in touch to provide more details.</p>
 </div>
 
-<form class="form-card" id="contact-form" method="post" action="https://formspree.io/f/{{FORMSPREE_ID}}">
-<input type="hidden" name="_subject" value="New DonorChase website enquiry" />
+<form class="form-card" id="contact-form" method="post" action="{{ENQUIRY_URL}}">
 <input type="hidden" name="Segment" value="general" />
 <input type="hidden" name="SourcePage" value="" />
+<input type="hidden" name="ElapsedMs" value="" />
 
 <div class="hp-field" aria-hidden="true">
-<label>Leave this field empty <input type="text" name="_gotcha" tabindex="-1" autocomplete="off" /></label>
+<label>Leave this field empty <input type="text" name="Website" tabindex="-1" autocomplete="off" /></label>
 </div>
 
 <div id="form-status" role="alert" hidden></div>
@@ -35,7 +35,7 @@ nav: contact
 </div>
 <div class="form-row">
 <label for="Email">Company Email <span class="req">*</span></label>
-<input type="email" autocomplete="email" id="Email" maxlength="200" name="email" required />
+<input type="email" autocomplete="email" id="Email" maxlength="200" name="Email" required />
 </div>
 <div class="form-row">
 <label for="Phone">Contact Number <span class="req">*</span></label>

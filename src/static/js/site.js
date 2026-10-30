@@ -61,14 +61,19 @@ document.addEventListener('DOMContentLoaded', function () {
   }
 
   var status = document.getElementById('form-status');
+  var ok = document.getElementById('form-success');
+  var showSent = function () {
+    form.hidden = true;
+    ok.hidden = false;
+    ok.scrollIntoView({ behavior: 'smooth', block: 'center' });
+  };
+  // a form posted without JavaScript comes back here from the app
+  if (params.get('sent') === '1') showSent();
+
+  // forms sent within moments of the page opening are from bots, which the app ignores
+  var loadedAt = Date.now();
   form.addEventListener('submit', function (e) {
-    if (form.action.indexOf('YOUR_FORM_ID') !== -1) {
-      e.preventDefault();
-      status.className = 'form-errors';
-      status.textContent = 'The contact form is not connected yet. Please email info@donorchase.com.';
-      status.hidden = false;
-      return;
-    }
+    form.querySelector('input[name="ElapsedMs"]').value = Date.now() - loadedAt;
     if (!window.fetch) return; // old browsers: normal post
     e.preventDefault();
     var btn = form.querySelector('button[type="submit"]');
@@ -77,10 +82,7 @@ document.addEventListener('DOMContentLoaded', function () {
     fetch(form.action, { method: 'POST', body: new FormData(form), headers: { Accept: 'application/json' } })
       .then(function (r) {
         if (!r.ok) throw new Error('bad status');
-        var ok = document.getElementById('form-success');
-        form.hidden = true;
-        ok.hidden = false;
-        ok.scrollIntoView({ behavior: 'smooth', block: 'center' });
+        showSent();
       })
       .catch(function () {
         status.className = 'form-errors';

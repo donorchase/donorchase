@@ -41,9 +41,8 @@ from pathlib import Path
 # The public address of the site (used for canonical links, sitemap and the 404 page).
 SITE_URL = "https://donorchase.com"
 
-# Formspree form ID for the contact form (the part after formspree.io/f/).
-# Create a free form at https://formspree.io and paste the ID here.
-FORMSPREE_ID = "YOUR_FORM_ID"
+# Where the contact form posts; the app emails each enquiry on to us.
+ENQUIRY_URL = "https://app.donorchase.com/enquiry"
 
 # Where the app login lives.
 LOGIN_URL = "https://app.donorchase.com/login"
@@ -295,7 +294,7 @@ def build():
     urls = []
     for src in sorted(SRC_PAGES.rglob("*.html")):
         meta, body = parse_page(src.read_text(encoding="utf-8"))
-        body = body.replace("{{FORMSPREE_ID}}", FORMSPREE_ID).replace("{{DONORBOOST_URL}}", DONORBOOST_URL)
+        body = body.replace("{{ENQUIRY_URL}}", ENQUIRY_URL).replace("{{DONORBOOST_URL}}", DONORBOOST_URL)
         url_path = url_for(src)
         doc = page_shell(meta, body, url_path)
         doc = make_relative(doc, url_path, missing)
@@ -324,8 +323,6 @@ def build():
     (OUT / ".nojekyll").write_text("", encoding="utf-8")
 
     print(f"Built {len(urls)} pages into {OUT.relative_to(ROOT)}/")
-    if FORMSPREE_ID == "YOUR_FORM_ID":
-        print("NOTE: contact form not connected yet - set FORMSPREE_ID in build.py")
     if missing:
         print(f"NOTE: {len(missing)} image(s) not in src/static/images yet"
               + (f" - linking to {IMAGE_FALLBACK_URL} for now." if IMAGE_FALLBACK_URL else "."))
