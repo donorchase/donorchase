@@ -57,7 +57,7 @@ IMAGE_FALLBACK_URL = "https://donorchase.com"
 DONORBOOST_URL = "https://donorboost.co.uk/"
 
 CONTACT_EMAIL = "info@donorchase.com"
-CONTACT_PHONE_DISPLAY = "0 7570 013936"
+CONTACT_PHONE_DISPLAY = "07570 013936"
 CONTACT_PHONE_LINK = "07570013936"
 
 # ---------------------------------------------------------------------------
