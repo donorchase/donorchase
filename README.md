@@ -21,7 +21,7 @@ All existing URLs are kept, so links and Google rankings carry over:
 
 - `/` homepage (repositioned) · `/non-profit-accounting-software` pricing · `/donation-tracking-software` about
 - `/gift-aid-review` · `/software/integrations` · `/contact-us` · `/privacy-policy` · `/terms-and-conditions`
-- `/help-articles` + 4 articles, `/help-articles/xero` and `/help-articles/user-guide` · `/blog-and-news` + 4 posts
+- `/help-articles` + 4 articles, and `/help-articles/xero` · `/blog-and-news` + 4 posts
 
 New:
 
