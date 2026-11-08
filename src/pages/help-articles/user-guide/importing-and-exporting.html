@@ -1,0 +1,62 @@
+<!--
+title: Importing and Exporting | DonorChase
+description: How to upload donor contacts and comments to DonorChase from a CSV spreadsheet, fix upload errors, and download a dashboard.
+nav: help
+-->
+
+<article class="article">
+<a class="back-link" href="/help-articles/user-guide">&larr; User guide</a>
+<h1>Importing and Exporting</h1>
+<p>If you already keep donor details in a spreadsheet, you can bring them in rather than typing them. Uploading and downloading are for administrators.</p>
+<p>Uploads use a CSV file. In Excel, choose <strong>File &rarr; Save As</strong> and pick <em>CSV</em> as the file type.</p>
+
+<h2 id="contacts">Upload contacts</h2>
+<p>Open <strong>Settings &rarr; Upload Contacts</strong>, choose your file and click <strong>Upload</strong>. The first row must be these headings, in this order:</p>
+<p><code>Donor,Name,Description,Phone,Email</code></p>
+<div class="table-wrap">
+<table class="data-table">
+<thead>
+<tr><th>Column</th><th>What to enter</th><th>Required</th></tr>
+</thead>
+<tbody>
+<tr><td><strong>Donor</strong></td><td>The donor's name, exactly as it appears in DonorChase. Capitals don't matter.</td><td>Yes</td></tr>
+<tr><td><strong>Name</strong></td><td>The contact's name.</td><td>Yes</td></tr>
+<tr><td><strong>Description</strong></td><td>Who they are, such as <em>Mother</em> or <em>Treasurer</em>.</td><td>No</td></tr>
+<tr><td><strong>Phone</strong></td><td>Their phone number.</td><td>No</td></tr>
+<tr><td><strong>Email</strong></td><td>Their email address.</td><td>No</td></tr>
+</tbody>
+</table>
+</div>
+<p>Use a separate row for each contact when a donor has more than one. Upload only new contacts: a row for a contact the donor already has stops the upload.</p>
+
+<h2 id="comments">Upload comments</h2>
+<p>Open <strong>Settings &rarr; Upload Comments</strong>, choose your file and click <strong>Upload</strong>. The first row must be these headings:</p>
+<p><code>Donor,Comment1,Comment2,Comment3,Comment4,Comment5,Comment6,Comment7</code></p>
+<p>You can add up to seven comments per donor. All eight columns must be there, but leave a comment blank if you don't need it. A cell holding just a month label with nothing after it, such as <em>April 26 -</em>, is skipped.</p>
+<p>Uploaded comments are dated today and show you as the author, so you may want to put the original date in the text. Each upload adds comments, so uploading the same file twice creates duplicates.</p>
+
+<h2>If an upload fails</h2>
+<p>DonorChase checks the whole file first. If there's a problem, it tells you the line number and nothing is added, so you can fix the file and upload it again.</p>
+<div class="table-wrap">
+<table class="data-table">
+<thead>
+<tr><th>Message</th><th>What to do</th></tr>
+</thead>
+<tbody>
+<tr><td><em>X columns instead of 5</em> (or 8)</td><td>That line has too many or too few columns. Check for missing headings, or a comma in a value that isn't in quotes.</td></tr>
+<tr><td><em>Donor not found</em></td><td>The name doesn't match any donor. Compare it with the name on your dashboard, including any spaces or initials.</td></tr>
+<tr><td><em>There are multiple donors with the name</em></td><td>Two donors share this name. Add this one by hand on the donor's page, or make the names different in your bookkeeping package.</td></tr>
+<tr><td><em>There already is a contact</em></td><td>The donor already has a contact with that name. Remove the row from your file.</td></tr>
+<tr><td><em>Lines are duplicates</em></td><td>The same donor and contact name appear twice in the file. Remove one.</td></tr>
+<tr><td><em>Donor &amp; Name must not be blank</em></td><td>Fill in both columns on that line.</td></tr>
+<tr><td><em>is an invalid email</em></td><td>Correct the email address on that line, or leave it blank.</td></tr>
+</tbody>
+</table>
+</div>
+
+<h2>Download a dashboard</h2>
+<p>Click <strong>Download CSV</strong> at the bottom of a dashboard to get a spreadsheet of it. It includes every donor on that dashboard, whichever filters are switched on, with their group, balances, last donation, latest comment, team members, chasers and tags.</p>
+<p>The period columns match the number set in <strong>Terms Shown on Dashboard</strong>. To include more periods, raise that number on <strong>Settings &rarr; Dashboard Setup</strong> before downloading.</p>
+
+<p class="next-link"><a class="btn btn-primary" href="/help-articles/user-guide/your-account">Next: Your login and account</a></p>
+</article>

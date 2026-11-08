@@ -1,0 +1,56 @@
+<!--
+title: WhatsApp Messages | DonorChase
+description: How to draft standard WhatsApp messages in DonorChase, personalise them with placeholders, and send them to a donor's contacts.
+nav: help
+-->
+
+<article class="article">
+<a class="back-link" href="/help-articles/user-guide">&larr; User guide</a>
+<h1>WhatsApp Messages</h1>
+<p>Draft your standard messages once, then send them to a donor's contacts in a couple of clicks, with their name and amount filled in. DonorChase prepares the message and opens WhatsApp. You check it and press send there, using your own WhatsApp account.</p>
+
+<h2>Draft a message</h2>
+<ol>
+<li>Open <strong>Settings &rarr; Messages</strong> and click <strong>Add Message</strong>.</li>
+<li>Give it a <strong>Name</strong> your team will recognise, such as <em>First reminder</em>.</li>
+<li>Write the <strong>Message</strong>. Click a placeholder below the box to add it where your cursor is.</li>
+<li>Administrators can tick <strong>Shared</strong> so that everyone in the organisation can use it. Otherwise only you can see it.</li>
+<li>Click <strong>Save</strong>.</li>
+</ol>
+<p>You can edit and delete your own private messages. Only administrators can edit or delete shared ones.</p>
+
+<h2>Placeholders</h2>
+<div class="table-wrap">
+<table class="data-table">
+<thead>
+<tr><th>Placeholder</th><th>Replaced with</th></tr>
+</thead>
+<tbody>
+<tr><td><code>{ContactName}</code></td><td>The contact's full name</td></tr>
+<tr><td><code>{ContactFirstName}</code></td><td>The contact's first name</td></tr>
+<tr><td><code>{DonorName}</code></td><td>The donor's name</td></tr>
+<tr><td><code>{Outstanding}</code></td><td>The donor's total amount outstanding. This is the number only, so add your own currency symbol, for example <code>£{Outstanding}</code>.</td></tr>
+<tr><td><code>{LastInvoiceLink}</code></td><td>A link for the donor to view their last invoice online (organisations using Xero)</td></tr>
+<tr><td><code>{SchoolName}</code></td><td>Your organisation's name</td></tr>
+</tbody>
+</table>
+</div>
+<p>For example:</p>
+<blockquote>Hi {ContactFirstName}, this is a friendly reminder from {SchoolName} about the £{Outstanding} pledged by {DonorName}. Thank you for your support.</blockquote>
+
+<h2>Send a message</h2>
+<ol>
+<li>On the donor's page, in the <strong>Contacts</strong> section, click the WhatsApp button next to the contact's name. It appears only if the contact has a phone number.</li>
+<li>Choose the <strong>Message</strong>. DonorChase fills in the placeholders.</li>
+<li>Check the phone number and make any changes to the wording for this donor.</li>
+<li>Click <strong>Open WhatsApp</strong>, then press send in WhatsApp.</li>
+</ol>
+<p>Numbers starting with a single 0 are treated as UK numbers. For a number in another country, enter it in international format, starting with + and the country code.</p>
+<p>DonorChase doesn't record that a message was sent, so complete a chaser with the method <em>WhatsApp</em> to keep the donor's history up to date.</p>
+
+<h2 id="wording">Wording for voluntary contributions</h2>
+<p>Some words can make a voluntary contribution sound like a compulsory charge. Unless <strong>Invoice Wording</strong> is ticked on <strong>Settings &rarr; Dashboard Setup</strong>, DonorChase warns you if a message uses <em>invoice</em>, <em>bill</em>, <em>statement</em>, <em>balance</em>, <em>payment</em> or <em>outstanding</em>.</p>
+<p>The warning doesn't stop you. You can save the message anyway, or untick the warning option on that message if the word is deliberate.</p>
+
+<p class="next-link"><a class="btn btn-primary" href="/help-articles/user-guide/importing-and-exporting">Next: Importing and exporting</a></p>
+</article>
